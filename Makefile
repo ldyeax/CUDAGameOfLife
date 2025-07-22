@@ -1,5 +1,5 @@
 CC = nvcc
-CFLAGS = --expt-relaxed-constexpr -Wno-deprecated-gpu-targets
+CFLAGS = --expt-relaxed-constexpr -Wno-deprecated-gpu-targets -arch=native
 LDFLAGS = -lncurses -ltinfo
 TARGET = cudagol
 SRC = main.cu
